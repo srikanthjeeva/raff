@@ -1,0 +1,9 @@
+<h1>Profile</h1>
+
+<form id="new_entry">
+  <input type="text" name="username" id="new_entry_username" placeholder="Username">
+  <input type="submit" value="Add">
+</form>
+
+<ul id="entries">
+</ul>

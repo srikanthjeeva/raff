@@ -1,0 +1,1 @@
+<span class="disp_username"><%= @entry.get('username') %></span> | <%= @entry.get('name') %>
