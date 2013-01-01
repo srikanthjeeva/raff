@@ -13,7 +13,12 @@ a img {
 }
 
 a {
-  color: #0000FF;
+  color: #555555;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
 }
 
 .clear {

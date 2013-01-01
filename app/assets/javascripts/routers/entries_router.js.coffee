@@ -13,5 +13,10 @@ class Raffler.Routers.Entries extends Backbone.Router
     $("#container").html(view.render().el)
 
   show: (id) ->
-    alert "show page #{id}"
+    @model = new Raffler.Models.Entry({id: id})
+    @model.on 'sync', => @create_profile_view @model
+    @model.fetch()
 
+  create_profile_view: (model) ->
+    view1 = new Raffler.Views.Profile(model: model)
+    $("#profile_container").html(view1.render().el)

@@ -1,1 +1,1 @@
-<span class="disp_username"><%= @entry.get('username') %></span> | <%= @entry.get('name') %>
+<a href="#/entries/<%= @entry.get('username') %>" id="people_link"><span class="disp_username"><%= @entry.get('username') %></span> | <%= @entry.get('name') %></a>
